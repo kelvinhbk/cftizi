@@ -3,3 +3,8 @@ main = "_worker.js"
 compatibility_date = "2026-01-20"
 # 保留 dashboard 里设置的变量/机密（如代理 UUID u），CI 部署不覆盖删除
 keep_vars = true
+
+# KV 绑定：面板「配置管理」在线保存用（上游 cfnew 约定 binding 名 C）
+[[kv_namespaces]]
+binding = "C"
+id = "f05df5915a624a989e0e19621d94a104"
